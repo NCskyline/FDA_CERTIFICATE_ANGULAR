@@ -363,7 +363,6 @@
     <None Include="Linq\LGT_DRUG.dbml.layout">
       <DependentUpon>LGT_DRUG.dbml</DependentUpon>
     </None>
-    <Content Include="Views\DH\FRM_MAIN_DH.vbhtml" />
     <Content Include="Views\AUTHEN\AUTHEN_GATWAY.vbhtml" />
     <None Include="Web References\WS_FLATTEN\WS_FLATTEN.disco" />
     <Content Include="Web References\WS_LOG\Reference.map">
@@ -1398,11 +1397,6 @@
     <Folder Include="Models\" />
     <Folder Include="PDF\" />
     <Folder Include="Scripts_angular\DR\" />
-    <Folder Include="Views\DI\" />
-    <Folder Include="Views\DL\" />
-    <Folder Include="Views\DR\" />
-    <Folder Include="Views\DS\" />
-    <Folder Include="Views\LCN\" />
     <Folder Include="Views\SV_CENTER\" />
   </ItemGroup>
   <ItemGroup>
