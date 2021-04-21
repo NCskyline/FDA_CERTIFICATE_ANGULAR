@@ -1,0 +1,362 @@
+/*Loading*/
+
+.banner {
+  width: 100%;
+  margin-top: 24px;
+}
+.title-all {
+  font-size: 46px;
+  text-align: center;
+  margin-top: 20px;
+}
+.card {
+  padding: 40px 15px 5px 24px;
+}
+.card.aco {
+  padding-top: 0;
+}
+.card.aco.green .hc .hc-title {
+  color: #05460C;
+}
+.card.aco.green .hc .hc-line {
+  background-color: #05460C;
+}
+.card.aco.active .hc .hc-icon.fa-chevron-down {
+  display: none;
+}
+.card.aco.active .hc .hc-icon.fa-chevron-up {
+  display: block;
+}
+.card.aco.active .bc {
+  max-height: 1000px;
+}
+.card.aco .hc {
+  display: block;
+}
+.card.aco .hc .hc-icon {
+  font-size: 0.75em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  right: 0;
+  cursor: pointer;
+}
+.card.aco .hc .hc-icon.fa-chevron-down {
+  display: block;
+}
+.card.aco .hc .hc-icon.fa-chevron-up {
+  display: none;
+}
+.card.aco .hc .hc-title {
+  position: relative;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 11px;
+}
+.card.aco .hc .hc-line {
+  display: block;
+  background-color: #000000;
+  height: 3px;
+  width: 100%;
+}
+.card.aco .bc {
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.card.aco .bc .wrap-bc {
+  overflow: hidden;
+  word-wrap: break-word;
+}
+.card.aco .bc .item-bc {
+  display: block;
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding-top: 35px;
+  margin-bottom: 7px;
+}
+.card.aco .bc .item-bc .b-sign {
+  cursor: pointer;
+  width: 49px;
+  margin-bottom: 12px;
+}
+.card.aco .bc .item-bc .b-text {
+  cursor: pointer;
+  font-size: 13px;
+  color: #000;
+}
+.card.aco .bc .item-bc:nth-child(4n+1) {
+  clear: left;
+}
+@media (max-width: 767px) {
+  .title-all {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .card .bc .item-bc {
+    width: 50%;
+  }
+  .card .bc .item-bc:nth-child(4n+1) {
+    clear: none;
+  }
+  .card .bc .item-bc:nth-child(2n+1) {
+    clear: left;
+  }
+}
+.wrap-calendar {
+  background-color: white;
+  width: 70%;
+  height: auto;
+  min-height: 740px;
+  margin-right: 5px;
+  order: 2;
+}
+.wrap-calendar .wrap-menu {
+  width: 100%;
+}
+.wrap-calendar .wrap-menu .wrap-button {
+  width: 60%;
+  float: left;
+  padding-left: 23px;
+  padding-top: 27px;
+  padding-bottom: 23px;
+  padding-right: 15px;
+}
+    .wrap-calendar .wrap-menu .wrap-button .button-menu {
+        cursor: pointer;
+        background-color: #38a86b;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        height: 30px;
+        border: #38a86b solid 1px;
+        border-radius: 3px;
+        padding-left: 20px;
+        padding-right: 20px;
+        -webkit-box-shadow: 1px 1px 5px 2px #e8e8e8;
+        -moz-box-shadow: 1px 1px 5px 2px #e8e8e8;
+        box-shadow: 1px 1px 5px 2px #e8e8e8;
+    }
+.wrap-calendar .wrap-menu .wrap-tool {
+  width: 40%;
+  float: right;
+  padding-top: 29px;
+  padding-right: 15px;
+  text-align: right;
+}
+.wrap-calendar .wrap-menu .wrap-tool .dropdown-menu-time {
+  margin-right: 30px;
+  display: inline-block;
+  list-style-type: none;
+  font-size: 12px;
+}
+.wrap-calendar .wrap-menu .wrap-tool .dropdown-menu-time .dropdown {
+  border-bottom: #EEC533 solid 1px;
+}
+.wrap-calendar .wrap-menu .wrap-tool .dropdown-menu-time .dropdown-menu {
+  padding-left: 10px;
+  font-size: 12px;
+  min-width: 0;
+  width: 100px;
+}
+.wrap-calendar .wrap-menu .wrap-tool .dropdown-menu-time .dropdown-menu .li {
+  color: black;
+}
+.wrap-calendar .wrap-menu .wrap-tool img {
+  cursor: pointer;
+  margin-right: 30px;
+}
+.wrap-left-menu {
+  order: 1;
+  background-color: #fff;
+  width: 29%;
+  margin-right: 5px;
+  float: right;
+  padding-top: 30px;
+}
+.wrap-left-menu .card {
+  margin-bottom: 10px;
+  border: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+    .wrap-left-menu .card .btn-add {
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        background-color: #38a86b;
+        border: 0;
+        font-size: 22px;
+        position: absolute;
+        right: 25px;
+        top: -5px;
+        cursor: pointer;
+    }
+.wrap-left-menu .hc-line {
+  display: block;
+  background-color: #000000;
+  height: 1px;
+  margin-left: 24px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+.wrap-bc .container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 12px;
+  padding-top: 1px;
+  color: black;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.wrap-bc .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.wrap-bc .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 2px;
+}
+.wrap-bc .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.wrap-bc .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.wrap-bc .container .checkmark:after {
+  left: 7px;
+  top: 2px;
+  width: 6px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.checkbox-green .checkmark {
+  background-color: #15B480;
+}
+.checkbox-blue .checkmark {
+  background-color: #155EB4;
+}
+.checkbox-yellow .checkmark {
+  background-color: #EBDC24;
+}
+.checkbox-red .checkmark {
+  background-color: #B41515;
+}
+.checkbox-purple .checkmark {
+  background-color: #6F2191;
+}
+.checkbox-brown .checkmark {
+  background-color: #915921;
+}
+@media (min-width: 521px) and (max-width: 990px) {
+  .wrap-calendar .wrap-tool {
+    width: 100% !important;
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-left: 20px;
+  }
+  .wrap-calendar .wrap-tool .dropdown-menu-time {
+    padding-left: 23px;
+    float: left;
+  }
+  .wrap-calendar .wrap-button {
+    width: 100% !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px;
+  }
+  .wrap-calendar .wrap-button .button-menu {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 521px) and (max-width: 1200px) {
+  .wrap-calendar {
+    width: 70%;
+    margin-right: 0;
+  }
+  .wrap-calendar .wrap-menu .wrap-button {
+    padding-left: 20px;
+    width: 68%;
+  }
+  .wrap-calendar .wrap-menu .wrap-button .button-menu {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .wrap-calendar .wrap-menu .wrap-tool {
+    width: 32%;
+    padding-right: 0;
+  }
+  .wrap-calendar .wrap-menu .wrap-tool .dropdown-menu-time {
+    margin-right: 10px !important;
+    padding-left: 0;
+  }
+  .wrap-calendar .wrap-menu .wrap-tool img {
+    margin-right: 10px !important;
+  }
+  .wrap-left-menu {
+    width: 29%;
+  }
+}
+@media (max-width: 767px) {
+  .page-content {
+    display: block;
+  }
+  .page-content .wrap-left-menu {
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+  .page-content .wrap-calendar {
+    width: 100%;
+  }
+  .page-content .wrap-calendar .wrap-tool {
+    width: 100%;
+    padding-top: 20px;
+    padding-right: 0;
+  }
+  .page-content .wrap-calendar .wrap-tool .dropdown-menu-time {
+    padding-left: 23px;
+    float: left;
+  }
+  .page-content .wrap-calendar .wrap-button {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .page-content .wrap-calendar .wrap-button .button-menu {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

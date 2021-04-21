@@ -1,0 +1,887 @@
+.clearfix {
+    zoom: 1
+}
+
+    .clearfix:before, .clearfix:after {
+        content: "";
+        display: table
+    }
+
+    .clearfix:after {
+        clear: both
+    }
+
+.container {
+    width: 90%;
+}
+
+#page {
+    /*padding-top: 30px;*/
+    line-height: 1.6
+}
+
+#chart-donut {
+    padding-top: 0;
+    text-align: center
+}
+
+    #chart-donut .gauge {
+        margin-left: auto;
+        margin-right: auto
+    }
+
+.perc {
+    position: relative;
+    top: 35%;
+    color: #666
+}
+
+    .perc .text-p {
+        font-size: 60px;
+        line-height: 1
+    }
+
+.page-content {
+    padding: 0;
+    display: block
+}
+
+.exp-ctrl {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center
+}
+
+    .exp-ctrl span {
+        display: inline-block;
+        vertical-align: middle;
+        color: #dd99be;
+        font-size: 28px
+    }
+
+    .exp-ctrl .ec-title {
+        margin-left: 80px;
+        margin-right: 80px
+    }
+
+    .exp-ctrl .ec-btn {
+        cursor: pointer
+    }
+
+.exp {
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 11px
+}
+
+    .exp .item-exp {
+        float: left;
+        margin-right: 36px
+    }
+
+        .exp .item-exp.green .text {
+            color: #008b06
+        }
+
+        .exp .item-exp.green .sign {
+            background-color: #008b06
+        }
+
+        .exp .item-exp.red .text {
+            color: #d00
+        }
+
+        .exp .item-exp.red .sign {
+            background-color: #d00
+        }
+
+        .exp .item-exp.yellow .text {
+            color: #f2c32a
+        }
+
+        .exp .item-exp.yellow .sign {
+            background-color: #f2c32a
+        }
+
+        .exp .item-exp.violet .text {
+            color: #430089
+        }
+
+        .exp .item-exp.violet .sign {
+            background-color: #430089
+        }
+
+        .exp .item-exp.blue .text {
+            color: #0e9edd
+        }
+
+        .exp .item-exp.blue .sign {
+            background-color: #0e9edd
+        }
+
+        .exp .item-exp .sign, .exp .item-exp .text {
+            display: inline-block;
+            vertical-align: middle
+        }
+
+        .exp .item-exp .text {
+            font-size: 16px
+        }
+
+        .exp .item-exp .sign {
+            width: 7px;
+            height: 7px;
+            display: inline-block;
+            margin-right: 10px
+        }
+
+.page-header .menu {
+    overflow: hidden;
+    margin-left: -10px;
+    margin-right: -10px
+}
+
+    .page-header .menu .menu-item {
+        cursor: pointer;
+        display: block;
+        font-size: 18px;
+        float: left;
+        margin-left: 25px;
+        margin-right: 25px;
+        position: relative;
+        padding-bottom: 10px;
+        color: #5b5b5b;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out
+    }
+
+        .page-header .menu .menu-item:before {
+            content: "";
+            width: 0;
+            height: 2px;
+            background-color: #f2c32a;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin-right: auto;
+            margin-left: auto;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out
+        }
+
+        .page-header .menu .menu-item:hover {
+            color: #f2c32a
+        }
+
+        .page-header .menu .menu-item.active {
+            color: #f2c32a
+        }
+
+            .page-header .menu .menu-item.active:before {
+                width: 96%
+            }
+
+.card {
+    padding: 13px 10px
+}
+
+.title-card {
+    position: relative;
+    margin-bottom: 23px
+}
+
+    .title-card .text {
+        font-size: 33px;
+        color: #000;
+        display: inline-block;
+        vertical-align: middle
+    }
+
+        .title-card .text .hilight {
+            color: #f2c32a
+        }
+
+    .title-card .sign {
+        width: 15.4px;
+        height: 16.58px;
+        display: inline-block;
+        vertical-align: middle;
+        background-image: url(../Images/home/calendar.svg)
+    }
+
+    .title-card .map-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 36px;
+        height: 36px;
+        display: block;
+        background-image: url(../Images/home/map.svg)
+    }
+
+.top-content {
+    padding-top: 7px;
+    display: block;
+    margin-right: -5px;
+    margin-left: -5px;
+    padding-bottom: 20px
+}
+
+    .top-content .t-item {
+        border: 1px solid #e3e3e3;
+        width: 24%;
+        margin: 0 .5%;
+        float: left;
+        padding: 17px 25px 5px;
+        -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+        -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+        box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+        text-align: right
+    }
+
+    .top-content .tt1 {
+        font-size: 21px;
+        line-height: 21px;
+        margin-bottom: 6px;
+        color: #666
+    }
+
+    .top-content .tt2 {
+        font-size: 42px;
+        line-height: 42px;
+        margin-bottom: 9px;
+        color: #F2C32A
+    }
+
+.slide-content {
+    position: relative;
+    padding: 10px 18px 20px
+}
+
+    .slide-content .control {
+        width: 44px;
+        height: 44px;
+        position: absolute;
+        background-repeat: no-repeat;
+        top: -22px;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        cursor: pointer
+    }
+
+        .slide-content .control.prev {
+            left: -8px;
+            background-image: url(../Images/home/btn_prev.svg)
+        }
+
+        .slide-content .control.next {
+            right: -8px;
+            background-image: url(../Images/home/btn_next.svg)
+        }
+
+    .slide-content .item-slide {
+        float: left;
+        margin-left: .5%;
+        margin-right: .5%;
+        width: 24%;
+        padding: 3px 20px 15px;
+        -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+        -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+        box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+        text-align: right
+    }
+
+        .slide-content .item-slide .is-desc {
+            font-size: 20px;
+            color: #666
+        }
+
+        .slide-content .item-slide .is-number {
+            font-size: 39px;
+            color: #dd99be;
+            line-height: 1.1
+        }
+
+.p-head {
+    padding-top: 7px;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+    padding-bottom: 20px
+}
+
+    .p-head .ppp {
+        width: 30%;
+        float: left;
+        margin-left: 1.665%;
+        margin-right: 1.665%;
+        text-align: left
+    }
+
+        .p-head .ppp .dd1 {
+            font-size: 14px;
+            color: #666
+        }
+
+        .p-head .ppp .dd2 {
+            font-size: 16px;
+            color: #000
+        }
+
+.textarea-plan {
+    border: none;
+    overflow: auto;
+    outline: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    width: 100%;
+    border-radius: 4px;
+    height: 158px;
+    border: 1px solid #B7B7B7;
+    font-size: 16px;
+    padding: 11px 13px;
+    margin-top: 5px;
+    margin-bottom: 20px
+}
+
+.contain-submit {
+    display: block;
+    text-align: right
+}
+
+.btn-submit {
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 9px 25px
+}
+
+    .btn-submit.yellow {
+        color: #fff;
+        background-color: #F2C32A
+    }
+
+    .btn-submit.btn-edit {
+        padding: 8px 10px;
+        font-size: 16px;
+        line-height: 16px
+    }
+
+    .btn-submit.save .text {
+        display: inline-block;
+        vertical-align: middle
+    }
+
+    .btn-submit.save .sign {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        background-image: url(../images/home/save_sign.svg);
+        background-repeat: no-repeat;
+        vertical-align: middle;
+        margin-right: 5px
+    }
+
+.input-xs {
+    border: none;
+    overflow: auto;
+    outline: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    height: 31px;
+    width: 400px;
+    border: 1px solid #B7B7B7;
+    border-radius: 4px;
+    margin-right: 5px
+}
+
+.p-body {
+    padding-top: 21px
+}
+
+    .p-body .d-row {
+        overflow: hidden
+    }
+
+        .p-body .d-row .dr1, .p-body .d-row .dr2 {
+            float: left
+        }
+
+        .p-body .d-row .dr1 {
+            width: 55%;
+            margin-right: 7%
+        }
+
+        .p-body .d-row .dr2 {
+            width: 38%
+        }
+
+        .p-body .d-row .rr1 {
+            font-size: 14px;
+            color: #666
+        }
+
+        .p-body .d-row .rr2 {
+            font-size: 16px;
+            color: #000
+        }
+
+.cc-input {
+    padding-top: 6px;
+    display: block;
+    padding-bottom: 11px
+}
+
+    .cc-input .wrap-cc-input {
+        position: relative
+    }
+
+    .cc-input .sign-search {
+        top: 7px;
+        left: 9px;
+        position: absolute;
+        display: block;
+        width: 14px;
+        height: 14px;
+        background-image: url(../Images/home/search_y.svg)
+    }
+
+    .cc-input .search1 {
+        border: 0;
+        border-radius: 4px;
+        background-color: #F1F1F2;
+        width: 100%;
+        padding-left: 34px;
+        padding-right: 20px
+    }
+
+.c-content {
+    margin-bottom: 20px;
+    position: relative
+}
+
+    .c-content .list-cc {
+        display: block
+    }
+
+        .c-content .list-cc .row-cc {
+            display: block;
+            overflow: hidden;
+            padding-top: 15px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid #D0D0D0
+        }
+
+            .c-content .list-cc .row-cc div {
+                float: left
+            }
+
+            .c-content .list-cc .row-cc .c1 {
+                width: 10%
+            }
+
+            .c-content .list-cc .row-cc .c2 {
+                width: 23%
+            }
+
+            .c-content .list-cc .row-cc .c3 {
+                width: 18%
+            }
+
+            .c-content .list-cc .row-cc .c4 {
+                width: 32%
+            }
+
+            .c-content .list-cc .row-cc .c5 {
+                width: 13%
+            }
+
+                .c-content .list-cc .row-cc .c5.green {
+                    color: #008b06
+                }
+
+                .c-content .list-cc .row-cc .c5.red {
+                    color: #d00
+                }
+
+    .c-content #chart-month {
+        display: block;
+        min-height: 100px
+    }
+
+    .c-content .list {
+        display: block;
+        overflow: hidden
+    }
+
+        .c-content .list .item-list {
+            overflow: hidden;
+            padding: 3px 0 13px;
+            border-bottom: 1px solid #D6D6D6;
+            margin-bottom: 13px;
+            position: relative;
+            cursor: pointer
+        }
+
+            .c-content .list .item-list.ss {
+                padding-top: 0;
+                padding-bottom: 0;
+                margin-bottom: 4px;
+                padding-left: 30px
+            }
+
+                .c-content .list .item-list.ss .tt1 {
+                    width: 51%
+                }
+
+                .c-content .list .item-list.ss .tt2 {
+                    width: 44%
+                }
+
+                .c-content .list .item-list.ss .name, .c-content .list .item-list.ss .place {
+                    font-size: 14px
+                }
+
+                .c-content .list .item-list.ss .place, .c-content .list .item-list.ss .type {
+                    color: #636363
+                }
+
+                .c-content .list .item-list.ss .date {
+                    font-size: 10px;
+                    color: #000
+                }
+
+                .c-content .list .item-list.ss:before {
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    display: inline-block;
+                    position: absolute;
+                    background-image: url(../Images/home/bull-s.svg);
+                    z-index: 3;
+                    top: -10px;
+                    bottom: 0;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    left: 0
+                }
+
+            .c-content .list .item-list .tt1, .c-content .list .item-list .tt2 {
+                float: left
+            }
+
+            .c-content .list .item-list .tt1 {
+                width: 55%;
+                text-align: left;
+                font-size: 14px;
+                color: #f2c32a;
+                margin-right: 5%
+            }
+
+            .c-content .list .item-list .tt2 {
+                width: 40%;
+                margin-top: 2px;
+                text-align: right;
+                font-size: 12px;
+                color: #636363
+            }
+
+    .c-content .wrap-row-xs {
+        display: block;
+        margin-left: -1.5%;
+        margin-right: -1.5%
+    }
+
+    .c-content .row-xs {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 28px
+    }
+
+        .c-content .row-xs.card-xs {
+            overflow: visible;
+            margin-bottom: 10px
+        }
+
+            .c-content .row-xs.card-xs .part-xs {
+                padding: 8px 13px;
+                -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+                -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+                box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+                min-height: 190px
+            }
+
+                .c-content .row-xs.card-xs .part-xs .exp .item-exp {
+                    margin-right: 14px
+                }
+
+                .c-content .row-xs.card-xs .part-xs #chart-company {
+                    display: block
+                }
+
+                    .c-content .row-xs.card-xs .part-xs #chart-company .gauge {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto
+                    }
+
+                .c-content .row-xs.card-xs .part-xs .perc {
+                    position: relative;
+                    top: 35%;
+                    color: #666
+                }
+
+                    .c-content .row-xs.card-xs .part-xs .perc .text-p {
+                        font-size: 36px;
+                        line-height: 1
+                    }
+
+                    .c-content .row-xs.card-xs .part-xs .perc .g-textshow {
+                        display: none
+                    }
+
+        .c-content .row-xs.last {
+            margin-bottom: 0
+        }
+
+    .c-content .part-xs {
+        width: 47%;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        float: left
+    }
+
+        .c-content .part-xs.xx .title-xs {
+            color: #5B5B5B
+        }
+
+        .c-content .part-xs.xx .t-desc {
+            color: #f2c32a
+        }
+
+        .c-content .part-xs.xx .text {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px
+        }
+
+        .c-content .part-xs.xx .s1 {
+            width: 15.4px;
+            height: 16.58px;
+            display: inline-block;
+            vertical-align: middle;
+            background-image: url(../Images/home/calendar.svg)
+        }
+
+        .c-content .part-xs.full {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            float: none
+        }
+
+    .c-content .title-xxs {
+        font-size: 14px;
+        color: #5B5B5B;
+        margin-bottom: 12px
+    }
+
+    .c-content .t-xxs {
+        font-size: 12px;
+        color: #f2c32a
+    }
+
+        .c-content .t-xxs a {
+            text-decoration: underline;
+            display: block;
+            margin-bottom: 8px
+        }
+
+    .c-content .title-xs {
+        font-size: 16px;
+        color: #5B5B5B;
+        position: relative
+    }
+
+    .c-content .t-desc {
+        font-size: 18px;
+        color: #000
+    }
+
+    .c-content .title-c {
+        font-size: 19px;
+        color: #000;
+        margin-bottom: 8px;
+        position: relative
+    }
+
+        .c-content .title-c .yy {
+            color: #f2c32a
+        }
+
+        .c-content .title-c .sign-dd {
+            vertical-align: middle;
+            display: inline-block;
+            width: 10px;
+            height: 5px;
+            background-image: url(../Images/home/dd_y.svg);
+            margin-left: 5px;
+            background-repeat: no-repeat
+        }
+
+        .c-content .title-c .sign-save {
+            vertical-align: middle;
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            background-image: url(../Images/home/save.svg);
+            margin-left: 5px;
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 0
+        }
+
+    .c-content .p1, .c-content .p2, .c-content .p-full {
+        padding: 8px 20px;
+        min-height: 350px;
+        -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+        -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+        box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12)
+    }
+
+        .c-content .p1.no-padding, .c-content .p2.no-padding, .c-content .p-full.no-padding {
+            padding: 0
+        }
+
+        .c-content .p1.no-shadow, .c-content .p2.no-shadow, .c-content .p-full.no-shadow {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none
+        }
+
+        .c-content .p1.p-exp, .c-content .p2.p-exp, .c-content .p-full.p-exp {
+            padding-top: 15px
+        }
+
+            .c-content .p1.p-exp .exp, .c-content .p2.p-exp .exp, .c-content .p-full.p-exp .exp {
+                top: 18px
+            }
+
+    .c-content .p-full {
+        display: block;
+        min-height: 400px
+    }
+
+        .c-content .p-full img {
+            width: 100%
+        }
+
+    .c-content .p1 {
+        position: relative;
+        width: 65.95%;
+        margin-right: 1.95%;
+        float: left
+    }
+
+    .c-content .p2 {
+        position: relative;
+        float: right;
+        width: 32.1%
+    }
+
+        .c-content .p1.half, .c-content .p2.half {
+            width: 49%;
+            min-height: 350px
+        }
+
+    .c-content .p1.half {
+        margin-right: 2%
+    }
+
+    .c-content .add-bt {
+        margin-bottom: 30px
+    }
+
+.dropdown-menu.show {
+    top: initial;
+    left: 0;
+}
+
+@media (max-width:990px) {
+    .container {
+        width: 100%
+    }
+
+    .slide-content .item-slide {
+        width: 49%;
+        margin-bottom: 10px
+    }
+
+    .c-content .p1, .c-content .p2 {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px
+    }
+
+    .exp {
+        position: relative;
+        top: initial;
+        text-align: center
+    }
+
+        .exp .item-exp {
+            float: none;
+            display: inline-block;
+            margin-right: 5%
+        }
+
+    .exp-ctrl {
+        position: relative;
+        margin-bottom: 10px
+    }
+
+    .c-content .p1.p-exp .exp, .c-content .p2.p-exp .exp, .c-content .p-full.p-exp .exp {
+        top: initial
+    }
+}
+
+@media (max-width:421px) {
+    .c-content .p1, .c-content .p2, .c-content .p-full {
+        padding: 8px
+    }
+
+    .title-card .text {
+        font-size: 24px
+    }
+
+    .exp-ctrl .ec-title {
+        margin-left: 30px;
+        margin-right: 30px
+    }
+
+    .slide-content {
+        padding: 10px 10px 20px
+    }
+
+        .slide-content .item-slide {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0
+        }
+}

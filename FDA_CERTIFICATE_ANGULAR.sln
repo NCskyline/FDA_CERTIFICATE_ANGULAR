@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FDA_CERTIFICATE_ANGULAR", "FDA_DROP_BOX_M27\FDA_CERTIFICATE_ANGULAR.vbproj", "{91E628AA-F171-4BF0-BE87-AB47627F430A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91E628AA-F171-4BF0-BE87-AB47627F430A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E628AA-F171-4BF0-BE87-AB47627F430A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91E628AA-F171-4BF0-BE87-AB47627F430A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E628AA-F171-4BF0-BE87-AB47627F430A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D2F7444-0C50-4CA4-81B3-F0B9F39267FC}
+	EndGlobalSection
+EndGlobal

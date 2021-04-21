@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="FDA_SIP_CER_WS_AUTHEN_Authentication" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.111.28.104/WS_AUTHEN4/AUTHENTICATION.asmx</Value>
+    </Setting>
+    <Setting Name="FDA_SIP_CER_WS_GET_CPN_WS_DATA_CENTER" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.111.28.104/WS_CENTER_CPN/WS_DATA_CENTER.asmx</Value>
+    </Setting>
+    <Setting Name="FDA_DROP_BOX_WS_BOOK_Service1" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.111.28.105/WS_BOOKING_DRUG/WS_UPDATE_BOOKING_DRUG.asmx</Value>
+    </Setting>
+    <Setting Name="FDA_DROP_BOX_FOOD_WS_LOG_WS_LOG_CENTER" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.111.28.108/LOG_FDA/WS_LOG_CENTER.asmx</Value>
+    </Setting>
+    <Setting Name="FDA_DROP_BOX_SIP_WS_MAIL_FDA_MAIL" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.111.28.108/Mail/FDA_MAIL.asmx</Value>
+    </Setting>
+    <Setting Name="FDA_DROP_BOX_M27_WS_FLATTEN_WS_FLATTEN" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.111.28.137/TEST_FLATEN/WS_FLATTEN.asmx</Value>
+    </Setting>
+    <Setting Name="FDA_DROP_BOX_M27_WS_SIP27_WS_SIP27" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.111.28.65/SIP27/WS_SIP27.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
