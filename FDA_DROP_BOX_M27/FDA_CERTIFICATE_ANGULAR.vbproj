@@ -166,11 +166,16 @@
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="CLASS\BAO\BAO.vb" />
     <Compile Include="CLASS\BAO\BAO_DROPBOX.vb" />
+    <Compile Include="CLASS\BAO\BAO_GEN.vb" />
     <Compile Include="CLASS\BAO\BAO_MODULE.vb" />
+    <Compile Include="CLASS\BAO\BAO_STOREPROCUDURE.vb" />
+    <Compile Include="CLASS\BAO\BAO_TRANSECTION.vb" />
     <Compile Include="CLASS\COMMON\BAO_COMMON.vb" />
     <Compile Include="CLASS\COMMON\ClassDataset.vb" />
     <Compile Include="CLASS\COMMON\CLS_SESSION.vb" />
     <Compile Include="CLASS\COMMON\Cls_XML.vb" />
+    <Compile Include="CLASS\DAO\DAO_CFS.vb" />
+    <Compile Include="CLASS\DAO\DAO_DRUG.vb" />
     <Compile Include="CLASS\MODEL\MODEL_DH.vb" />
     <Compile Include="CLASS\MODEL\MODEL_DI.vb" />
     <Compile Include="CLASS\MODEL\MODEL_DR.vb" />
@@ -180,14 +185,20 @@
     <Compile Include="CLASS\MODEL\MODEL_BOX.vb" />
     <Compile Include="CLASS\MODEL\XML_PDF.vb" />
     <Compile Include="Controllers\AUTHENController.vb" />
+    <Compile Include="Controllers\LCNController.vb" />
     <Compile Include="Controllers\SV_CENTERController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Linq\LGT_DRUG.designer.vb">
+    <Compile Include="Linq\LINQ_CER.designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>LGT_DRUG.dbml</DependentUpon>
+      <DependentUpon>LINQ_CER.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Linq\LINQ_DRUG.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LINQ_DRUG.dbml</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -204,7 +215,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Controllers\HomeController.vb" />
     <Compile Include="Web References\WS_AUTHEN\Reference.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -311,6 +321,8 @@
     <Content Include="js\jquery-3.3.1.min.js" />
     <Content Include="js\jquery-fusioncharts.min.js" />
     <Content Include="js\jquery.circlechart.js" />
+    <Content Include="Scripts_angular\AUTHEN\AUTHEN_GATWAY_CTRL.js" />
+    <Content Include="Scripts_angular\AUTHEN\FRM_CER_MAIN_CTRL.js" />
     <Content Include="Scripts_angular\CENTER_SV.js" />
     <Content Include="Scripts_angular\JS_COMMON.js" />
     <Content Include="js\map.js" />
@@ -351,19 +363,30 @@
     <Content Include="fonts\summernote\summernote.ttf" />
     <Content Include="fonts\summernote\summernote.woff" />
     <Content Include="Scripts_angular\AUTHEN_STAFF_CTRL.js" />
+    <Content Include="Scripts_angular\LCN\FRM_SELECT_LCN_CTRL.js" />
     <Content Include="Web References\WS_FLATTEN\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.vb</LastGenOutput>
     </Content>
-    <Content Include="Linq\LGT_DRUG.dbml">
+    <Content Include="Views\AUTHEN\AUTHEN_GATWAY.vbhtml" />
+    <Content Include="Linq\LINQ_CER.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>LGT_DRUG.designer.vb</LastGenOutput>
+      <LastGenOutput>LINQ_CER.designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
-    <None Include="Linq\LGT_DRUG.dbml.layout">
-      <DependentUpon>LGT_DRUG.dbml</DependentUpon>
+    <None Include="Linq\LINQ_CER.dbml.layout">
+      <DependentUpon>LINQ_CER.dbml</DependentUpon>
     </None>
-    <Content Include="Views\AUTHEN\AUTHEN_GATWAY.vbhtml" />
+    <Content Include="Linq\LINQ_DRUG.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LINQ_DRUG.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Linq\LINQ_DRUG.dbml.layout">
+      <DependentUpon>LINQ_DRUG.dbml</DependentUpon>
+    </None>
+    <Content Include="Views\AUTHEN\FRM_CER_MAIN.vbhtml" />
+    <Content Include="Views\LCN\FRM_SELECT_LCN.vbhtml" />
     <None Include="Web References\WS_FLATTEN\WS_FLATTEN.disco" />
     <Content Include="Web References\WS_LOG\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
@@ -1343,8 +1366,6 @@
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\version.json" />
-    <Content Include="Views\Home\AUTHEN.vbhtml" />
-    <Content Include="Views\Home\AUTHEN_STAFF.vbhtml" />
     <None Include="Web References\WS_AUTHEN\AUTHENTICATION.wsdl" />
     <Content Include="Web References\WS_AUTHEN\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
@@ -1393,10 +1414,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="CLASS\DAO\" />
     <Folder Include="Models\" />
     <Folder Include="PDF\" />
-    <Folder Include="Scripts_angular\DR\" />
     <Folder Include="Views\SV_CENTER\" />
   </ItemGroup>
   <ItemGroup>
@@ -1511,7 +1530,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50099</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50199/</IISUrl>
+          <IISUrl>http://localhost:50199/AUTHEN/AUTHEN_GATWAY?Token=PASS</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

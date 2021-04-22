@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LINQ_CER">
+  <DataContextMoniker Name="/LINQ_CERDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1f2b9989-d28b-4337-9d95-86f22136dc0d" isExpanded="false" absoluteBounds="0.5, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/LINQ_CERDataContext/CER_DRUG_GENNO_MAX" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5b3d96d8-defe-4d18-a372-21d579319551" absoluteBounds="0.51499999999999968, 0.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="45e57559-2379-442e-9393-e4671c8ec679" isExpanded="false" absoluteBounds="0.5, 1, 2, 0.45">
+      <DataClassMoniker Name="/LINQ_CERDataContext/CER_DRUG_HEAD" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5d8bb84c-38b8-4e84-b353-37b63f414269" absoluteBounds="0.515, 1.46, 1.9700000000000002, 16.4027099609375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="143e1468-3666-4234-87dd-05ad395cd762" isExpanded="false" absoluteBounds="0.5, 1.5, 2, 0.45">
+      <DataClassMoniker Name="/LINQ_CERDataContext/CER_DRUG_IMPORT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b2433eb6-fad4-4690-b0fa-21c76f86056e" absoluteBounds="0.51500000000000012, 1.96, 1.9700000000000002, 11.402872721354166" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="32b1c31c-4e92-4688-ad79-73ac90afd680" isExpanded="false" absoluteBounds="2.5, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/LINQ_CERDataContext/CER_DRUG_IMPORT_PRODUCT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f8970ddf-573e-4d3f-99e5-6bf169366da0" absoluteBounds="2.5149999999999997, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f84da3d9-799e-44c0-99c1-ca5f4837e35f" isExpanded="false" absoluteBounds="0.5, 2.5, 2, 0.45">
+      <DataClassMoniker Name="/LINQ_CERDataContext/CER_DRUG_LORPOR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="96183577-1228-492b-9535-b53fef0b75d9" absoluteBounds="0.51499999999999968, 2.96, 1.9700000000000002, 10.6336669921875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="43a7c570-dd5c-4f31-807e-e9b0ad83f576" isExpanded="false" absoluteBounds="0.5, 2, 2, 0.45">
+      <DataClassMoniker Name="/LINQ_CERDataContext/FILE_ATTACH" />
+      <nestedChildShapes>
+        <elementListCompartment Id="befede48-708d-4a37-9985-bb954052cc6b" absoluteBounds="0.51499999999999968, 2.46, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="10a80153-4b74-4b75-bb16-733ecec7dae4" isExpanded="false" absoluteBounds="2.5, 1.5, 2, 0.45">
+      <DataClassMoniker Name="/LINQ_CERDataContext/CER_DRUG_EDIT_ADDRESS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cb02e1d0-ce2b-4c77-a88a-43fac40397ee" absoluteBounds="2.5149999999999997, 1.96, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9e054c88-df07-4bf5-8e74-df1b0a3325e3" isExpanded="false" absoluteBounds="2.5, 1, 2, 0.45">
+      <DataClassMoniker Name="/LINQ_CERDataContext/MAS_PROCESS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b26e0d43-fa54-4faa-bfbb-fc3eeca810ba" absoluteBounds="2.5149999999999997, 1.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c6d6ed4e-d460-49f2-b184-385657f6dd08" isExpanded="false" absoluteBounds="2.5, 2.5, 2, 0.45">
+      <DataClassMoniker Name="/LINQ_CERDataContext/MAS_STATUS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c2246b7f-f3e3-4c36-906c-62f1d3694c96" absoluteBounds="2.515, 2.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="09dd99d7-9421-4b65-b9c6-feb5541ce6f9" isExpanded="false" absoluteBounds="2.5, 2, 2, 0.45">
+      <DataClassMoniker Name="/LINQ_CERDataContext/GEN_RCV_NUMBER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="27ac0cbf-1f2c-435f-9832-31dab5b6b8b1" absoluteBounds="2.515, 2.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1f5eeb95-6ded-4f4b-90d1-6bf5c556d449" isExpanded="false" absoluteBounds="4.5, 1, 2, 0.45">
+      <DataClassMoniker Name="/LINQ_CERDataContext/MAS_TEMPLATE_PROCESS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="110fa540-7f28-473d-bf42-0f63c6d723cb" absoluteBounds="4.515, 1.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a5516aeb-0cf6-428e-a91e-8c14354337e7" isExpanded="false" absoluteBounds="4.5, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/LINQ_CERDataContext/TEMPLATE_ATTACH" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2626ce3c-ad93-487e-9893-3acdb4395489" absoluteBounds="4.5150000000000006, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="34f4c349-5a96-4bd5-a4ce-967d64845728" isExpanded="false" absoluteBounds="4.5, 1.5, 2, 0.45">
+      <DataClassMoniker Name="/LINQ_CERDataContext/CER_DRUG_COUNTRY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="502448c1-4442-4370-8b6b-a94fb2a3f877" absoluteBounds="4.515, 1.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fbad288c-5324-44e8-b2e7-57d80c86ca80" isExpanded="false" absoluteBounds="4.5, 2, 2, 0.45">
+      <DataClassMoniker Name="/LINQ_CERDataContext/CER_DRUG_NAME_EXPORT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dd5ab0c7-0039-4511-8387-ceb1e510fded" absoluteBounds="4.515, 2.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

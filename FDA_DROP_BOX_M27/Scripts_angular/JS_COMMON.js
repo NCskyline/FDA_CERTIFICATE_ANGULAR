@@ -54,7 +54,8 @@ function CHK_TOKEN() {
         LCN_NAME = sessionStorage.LCN_NAME;
         COMPANY_NAME = sessionStorage.COMPANY_NAME;
 
-        var THANM = 'ชื่อ-นามสกุล ' + sessionStorage.THANM + ' ผู้รับอนุญาต ' + COMPANY_NAME;
+        //var THANM = 'ชื่อ-นามสกุล' + sessionStorage.THANM + ' ผู้รับอนุญาต ' + COMPANY_NAME;
+        var THANM = 'ชื่อ-นามสกุล' + THANM_DATA + ' ผู้รับอนุญาต ' + COMPANY_NAME;
         document.getElementById("result").innerHTML = THANM;
 
 

@@ -1,17 +1,14 @@
 ﻿Imports System.Web.Mvc
 
 Namespace Controllers
-    Public Class AUTHENController
+    Public Class LCNController
         Inherits Controller
 
-        ' GET: AUTHEN
+        ' GET: LCN
         Function Index() As ActionResult
             Return View()
         End Function
-        Function AUTHEN_GATWAY() As ActionResult
-            Return View()
-        End Function
-        Function FRM_CER_MAIN() As ActionResult
+        Function FRM_SELECT_LCN() As ActionResult
             Return View()
         End Function
     End Class

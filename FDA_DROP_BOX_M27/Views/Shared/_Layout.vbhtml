@@ -48,28 +48,51 @@
 <body>
     @Html.Partial("header", Nothing)
     <div id="main-content" ng-app="ANGULAR_APP">
-
         <div class="loading-spiner-holder" data-loading style="background:#04adfd40;width: 100%;height: 100%;position: fixed;z-index: 99999;">
             <div class="loading-spiner">
-
-
                 <span class="dots-loader" style="position: fixed;z-index: 100000;top: 50%;left: 50%;">Loading&#8230;</span>
-
 
             </div>
         </div>
+            <nav class="navbar navbar-expand-sm" style="background-color:#329704">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Logo</a>
 
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:white">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:white">ค้นหาผลิตภัณฑ์</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:white">รับเรื่องแทนผู้ประกอบการ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://privus.fda.moph.go.th/" style="color:white">ออกจากระบบ</a>
+                    </li>
+                    <!-- Dropdown -->
+                    @*<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>*@
+                </ul>
+            </nav>
+        
         <div class="wrap-main-content">
             <div id="page">
                 <div class="content-overlay"></div>
-                @Html.Partial("menu_popup", Nothing)
+                @*@Html.Partial("menu_popup", Nothing)*@
                 <div id="page-adr-2019">
                     <div class="page-header">
-                        <div class="card-tab-control page-header-content header-elements-md-inline container">
-                            @*<div class="tab-content">
-                                <div data-index="1" class="tab-content-item active"><i class="h-icon fas fa-bookmark"></i>DATA</div>
-                            </div>*@
-                        </div>
+                        <div class="card-tab-control page-header-content header-elements-md-inline container"></div>
                         <div class="clearfix"></div>
                     </div>
                     <div class="page-content container ">
@@ -84,6 +107,7 @@
                 </div>
             </div>
         </div>
+
     </div>
     <footer>
         <div class="ft1">
