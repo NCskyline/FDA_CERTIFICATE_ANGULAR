@@ -1,4 +1,4 @@
-﻿<header>
+﻿<header >
     <section id="header">
         @*<div class="wrap-header">
             <div class="list-left">
@@ -19,22 +19,28 @@
             </div>
             <div class="clearfix"></div>
         </div>*@
-        <div class="inner">
+        @*<div class="inner">
             <a href="" class="logo">
-                <img src="../Desigh/Images/logo@2x.png">
-            </a>
+            <img src="../Design/Images/logo@2x.png">
+        </a>
             <div class="title-header">
-                <!-- For Mobile -->
-                <a href="" class="logo">
-                    <img src="../Desigh/Images/logo@2x.png">
+                 For Mobile
+                <a href="" class="logo-site">
+                    <img src="../Design/Images/logo@2x.png" alt="Logo-site">
                 </a>
-                <!-- For Mobile -->
+                 For Mobile
                 <span class="circle" style="background:#8CB343"></span>
                 <div class="media-body">
                     <h1>ระบบหนังสือรับรองด้านยา</h1>
                     <p>สำนักงานคณะกรรมการอาหารและยา กระทรวงสาธารณสุข</p>
                 </div>
-            </div>
+            </div>*@
+
+        @*</div>*@
+        <div class="list-left">
+            <a class="logo-site" ><img src="../Design/Images/logo@2x.png"></a>
+            <span class="text-e" id="app"></span>
+            <div id="result"></div>
         </div>
         <div class="line-header"></div>
     </section>

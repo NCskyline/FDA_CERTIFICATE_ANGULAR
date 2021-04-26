@@ -1,11 +1,13 @@
 ﻿app.controller('FRM_CER_MAIN_CTRL', function ($scope, CENTER_SV, $http, $location) {
 
-    //CHK_TOKEN();
+    CHK_TOKEN();
     $scope.loading = true;
 
+    $scope.SET_SUB_MAIN_PAGE = "../LCN/FRM_SELECT_LCN";
     $scope.DOC_ID = 0;
     $scope.DOC_TITLE = "TEST";
     $scope.IS_USE = 0;
+
 
     $scope.SELECT_LCN = function () {
         var url = "/LCN/FRM_SELECT_LCN";

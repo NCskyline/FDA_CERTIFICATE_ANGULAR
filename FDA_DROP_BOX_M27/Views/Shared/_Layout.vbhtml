@@ -100,6 +100,7 @@
                             <div class="content">
                                 <div class="no-pm no-bg card no-border card-tab card-tab1 active">
                                     @RenderBody()
+                                    
                                 </div>
                             </div>
                         </div>

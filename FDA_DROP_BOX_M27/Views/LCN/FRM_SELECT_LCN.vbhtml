@@ -1,7 +1,7 @@
 ﻿
 @Code
     ViewData("Title") = "Home Page"
-    Layout = "~/Views/Shared/_Layout.vbhtml"
+    Layout = ""
 End Code
 
 <script src="../Scripts_angular/ANGULAR_APP.js"></script>

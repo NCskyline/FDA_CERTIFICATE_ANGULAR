@@ -28,6 +28,7 @@ app.controller('AUTHEN_CTRL', function ($scope, CENTER_SV, $http, $location) {
                 sessionStorage.THANM = datas.data.THANM;
                 sessionStorage.COMPANY_NAME = datas.data.COMPANY_NAME;
 
+                
  
                 window.location = "/HOME/FRM_CUSTOMER_LCN"; // << ปิดเวลาอัพขึ้นเซิร์ฟ เปิดแถวล่าง
                 //window.location = "/DRUG_DROPBOX/HOME/FRM_CUSTOMER_LCN"; 

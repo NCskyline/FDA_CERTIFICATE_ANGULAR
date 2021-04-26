@@ -185,6 +185,8 @@
     <Compile Include="CLASS\MODEL\MODEL_BOX.vb" />
     <Compile Include="CLASS\MODEL\XML_PDF.vb" />
     <Compile Include="Controllers\AUTHENController.vb" />
+    <Compile Include="Controllers\FRM_CERTIFICATE_CPPController.vb" />
+    <Compile Include="Controllers\FRM_CERTIFICATE_LORPORController.vb" />
     <Compile Include="Controllers\LCNController.vb" />
     <Compile Include="Controllers\SV_CENTERController.vb" />
     <Compile Include="Global.asax.vb">
@@ -387,6 +389,10 @@
     </None>
     <Content Include="Views\AUTHEN\FRM_CER_MAIN.vbhtml" />
     <Content Include="Views\LCN\FRM_SELECT_LCN.vbhtml" />
+    <Content Include="Views\FRM_CERTIFICATE_LORPOR\INPUT_RORPOR_02.vbhtml" />
+    <Content Include="Views\FRM_CERTIFICATE_CPP\INPUT_CPP.vbhtml" />
+    <Content Include="Views\FRM_CERTIFICATE_LORPOR\INPUT_RORPOR_03.vbhtml" />
+    <Content Include="Views\FRM_CERTIFICATE_LORPOR\INPUT_RORPOR_04.vbhtml" />
     <None Include="Web References\WS_FLATTEN\WS_FLATTEN.disco" />
     <Content Include="Web References\WS_LOG\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
@@ -1530,7 +1536,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50099</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50199/AUTHEN/AUTHEN_GATWAY?Token=PASS</IISUrl>
+          <IISUrl>http://localhost:50198/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

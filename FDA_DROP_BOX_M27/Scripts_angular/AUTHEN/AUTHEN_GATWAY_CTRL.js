@@ -25,6 +25,7 @@
                 sessionStorage.CITIZEN_ID_AUTHORIZE = datas.data.CITIZEN_ID_AUTHORIZE;
                 sessionStorage.THANM = datas.data.THANM;
 
+                //$scope.SET_SUB_MAIN_PAGE = "../AUTHEN/FRM_CER_MAIN";
                 window.location = "/AUTHEN/FRM_CER_MAIN"; // << ปิดเวลาอัพขึ้นเซิร์ฟ เปิดแถวล่าง
                 //window.location = "/DRUG_DROPBOX/HOME/FRM_STAFF_LIST"; 
             }
