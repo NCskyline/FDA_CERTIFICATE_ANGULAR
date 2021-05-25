@@ -24,8 +24,8 @@
 <table >
     <tr>
         <td class="auto-style53">ผู้รับอนุญาต</td>
-        <td><input type="checkbox" />ผลิตยา/แบ่งบรรจุยา(manufacturer)</td>
-        <td><input type="checkbox" />นำหรือสั่งยา(import)</td>
+        <td><input type="radio" id="ผลิตยา" name="md" value="1"/>ผลิตยา/แบ่งบรรจุยา(manufacturer)</td>
+        <td><input type="radio" id="นำหรือสั่งยา" name="md" value="2"/>นำหรือสั่งยา(import)</td>
         <td>ใบอนุญาตที่</td>
         <td></td>
     </tr>
@@ -56,7 +56,7 @@
 <table>
     <tr>
         <td>ประเภท (เลิือกเพียง 1 ประเภท)</td>
-        <td><input type="checkbox" />CFS</td>
+        <td><input type="checkbox"  ng-disabled="true" />CFS</td>
         <td><input type="checkbox" />CPP</td>
         <td><input type="checkbox" />CPP (WHO แบบขวาง 1 หน้า)</td>
         <td><input type="checkbox" />CPP (WHO 5 หน้า)</td>
@@ -104,7 +104,7 @@
 </table>
 <table>
     <tr>
-        <td>ตำำรับยา : Formula Active Ingredient (s) and amount (s) per unit dose</td>
+        <td>ตำรับยา : Formula Active Ingredient (s) and amount (s) per unit dose</td>
     </tr>
 </table>
 <table>

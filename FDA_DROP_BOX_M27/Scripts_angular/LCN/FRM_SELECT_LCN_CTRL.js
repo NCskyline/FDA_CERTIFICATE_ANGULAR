@@ -1,10 +1,20 @@
 ﻿app.controller('FRM_SELECT_LCN_CTRL', function ($scope, CENTER_SV, $http, $location) {
 
-    CHK_TOKEN();
-    $scope.loading = true;
+    //CHK_TOKEN();
+    //$scope.loading = true;
+    pageload();
 
-    
+    function pageload() {
 
+        var CITIZEN_ID_REPLACEMENT = sessionStorage.CITIZEN_ID_REPLACEMENT;
+
+        var Getdata = CENTER_SV.SP_GET_CER_DRUG_LCN(CITIZEN_ID_REPLACEMENT);
+        Getdata.then(function (datas) {
+            $scope.LIST_LCN = datas.data;
+        });
+
+    }
+   
 
 
 }).controller('appController', ['$scope', function ($scope) {

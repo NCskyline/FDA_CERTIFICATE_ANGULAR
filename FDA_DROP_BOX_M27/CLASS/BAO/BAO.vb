@@ -4,6 +4,8 @@ Public Class BAO
     Private _conn As String = System.Configuration.ConfigurationManager.ConnectionStrings("FDA_MDC27ConnectionString").ConnectionString
     Private _con_CPN As String = System.Configuration.ConfigurationManager.ConnectionStrings("LGTCPNConnectionString").ConnectionString
     Private _conn_CPN As String = System.Configuration.ConfigurationManager.ConnectionStrings("LGTPERMISSIONConnectionString").ConnectionString
+    Private _conn_CFS As String = System.Configuration.ConfigurationManager.ConnectionStrings("FDA_CFS_CENTERConnectionString").ConnectionString
+
 
 
     Public Function SP_GET_DRUG_PRODUCT_ESUB(ByVal register As String) As DataTable
@@ -212,12 +214,51 @@ Public Class BAO
         Return dts
     End Function
 
+#Region "CER CPP"
+    Public Function SP_GET_CER_DRUG_APPROVED(ByVal rcvno As String, ByVal ref_code As String) As DataTable
+        Dim clsds As New ClassDataset
+        Dim sql As String = "exec SP_GET_CER_DRUG_APPROVED @rcvno ='" & rcvno & "',@ref_code = '" & ref_code & "'"
+        Dim dt As New DataTable
+        dt = clsds.dsQueryselect(sql, _conn_CFS).Tables(0)
+
+        Return dt
+    End Function
+
+    Public Function SP_GET_CER_DRUG_ALL_RCV(ByVal process_id As Integer)
+        Dim clsds As New ClassDataset
+        Dim sql As String = "exec SP_GET_CER_DRUG_ALL_RCV @FK_PROCESS_ID=" & process_id
+        Dim dt As New DataTable
+        dt = clsds.dsQueryselect(sql, _conn_CFS).Tables(0)
+
+        Return dt
+    End Function
+
+    Public Function SP_GET_CER_DRUG_APPROVED_PROCESS(ByVal process_id As Integer)
+        Dim clsds As New ClassDataset
+        Dim sql As String = "exec SP_GET_CER_DRUG_APPROVED_PROCESS @process =" & process_id
+        Dim dt As New DataTable
+        dt = clsds.dsQueryselect(sql, _conn_CFS).Tables(0)
+
+        Return dt
+    End Function
+
+    Public Function SP_GET_DRUG_LCN_IDEN(ByVal iden As String)
+        Dim clsds As New ClassDataset
+        Dim sql As String = "exec SP_GET_DRUG_LCN_IDEN @iden ='" & iden & "'"
+        Dim dt As New DataTable
+        dt = clsds.dsQueryselect(sql, _conn_CFS).Tables(0)
+
+        Return dt
+    End Function
+#End Region
+
     'Public Function SP_GEN_NO(ByVal PROCESS_ID As Integer, ByVal IDA As Integer)
     '    Dim GEN_NO As Integer
     '    Dim dao As New DAO.TB_GEN_NO
     '    dao.GETDATABY_GEN_NO_MAX(PROCESS_ID)
     '    If IsNothing(dao.fields.GEN_NO) = True Then
     '        GEN_NO = 0
+    '     
     '    Else
     '        GEN_NO = dao.fields.GEN_NO
     '    End If

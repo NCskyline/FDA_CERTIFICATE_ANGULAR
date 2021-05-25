@@ -1,4 +1,5 @@
-﻿app.service("CENTER_SV", function ($http, Upload) {
+﻿
+app.service("CENTER_SV", function ($http, Upload) {
 
     this.SP_GET_BOX_CTZNO = function () {
         var response = $http({
@@ -204,116 +205,7 @@
         return response; 
     };
 
-    this.SETMODEL_LIST = function () {
-        var response = $http({
-            method: "post",
-            url: SET_URL_SV("/SV_CENTER/SETMODEL_LIST")
-        });
-        return response;
-    };
-    
-    this.GETDATA_INV_ITEM = function (TR_ID) {
-        var response = $http({
-            method: "post",
-            url: SET_URL_SV("/SV_CENTER/GETDATA_INV_ITEM"),
-            params: {
-                TR_ID: TR_ID,
-                CTZNO: CITIZEN_NO,
-                TOKEN: TOKEN
-            }
-        });
-        return response;
-    };
-
-    this.UPLOAD_PDF = function (CITIZEN_ID, TOKEN, file) { //เรียก Full model
-        var response = Upload.upload({
-            // url: host + "FOOD_CUST/UPLOAD_PDF",
-            url: SET_URL_SV("/SV_CENTER/UPLOAD_PDF"),
-            data: {
-                CITIZEN_ID: CITIZEN_ID,
-                TOKEN: TOKEN,
-                files: file
-            }
-        });
-        return response;
-    };
-
-
-
-    this.UPLOAD_PDF_V2 = function (model, file) { //เรียก Full model
-
-        var response = Upload.upload({
-            // url: host + "FOOD_CUST/UPLOAD_PDF",
-            url: SET_URL_SV("/SV_CENTER/UPLOAD_PDF_V2"),
-            data: {
-                model: JSON.stringify(model),
-                files: file
-            }
-        });
-        return response;
-    };
-
-
-    this.UPLOAD_PDF_V3 = function (model, file) { //เรียก Full model
-
-        var response = Upload.upload({
-            // url: host + "FOOD_CUST/UPLOAD_PDF",
-            url: SET_URL_SV("/SV_CENTER/UPLOAD_PDF_V3"),
-            data: {
-                model: JSON.stringify(model),
-                files: file
-            }
-        });
-        return response;
-    };
-
-    this.ADD_DATA_INV = function (model, model2) {
-        var response = $http({
-            method: "post",
-            url: SET_URL_SV("/SV_CENTER/ADD_DATA_INV"), //ไปดูที่ไฟล์ DATA_CENTERController.vb
-            dataType: "json",
-            data: {
-                XML: JSON.stringify(model),
-                XML2: JSON.stringify(model2),
-                TOKEN: TOKEN,
-                CTZNO: CITIZEN_NO
-            }
-        });
-        return response;
-    };
-
-    this.GETDATA_BOX_TR_ID = function (TR_ID) {
-        var response = $http({
-            method: "post",
-            url: SET_URL_SV("/SV_CENTER/GETDATA_BOX_TR_ID"),
-            params: {
-                TR_ID: TR_ID,
-                TOKEN: TOKEN,
-                CTZNO: CITIZEN_NO
-            }
-        });
-        return response;
-    };
-
-    this.UPDATE_DATA = function (TR_ID, STATUS_ID) {
-        var response = $http({
-            method: "post",
-            url: SET_URL_SV("/SV_CENTER/UPDATE_DATA"), //ไปดูที่ไฟล์ DATA_CENTERController.vb
-            dataType: "json",
-            data: {
-                TR_ID: TR_ID,
-                STATUS_ID: STATUS_ID,
-                TOKEN: TOKEN,
-                CTZNO: CITIZEN_NO
-            }
-        });
-        return response;
-    };
-
-
-    
-
-
+ 
     this.UPDATE_ITEM_INVOICE_STATUS = function (IDA) {
         var response = $http({
             method: "post",
@@ -348,6 +240,51 @@
             url: SET_URL_SV("/SV_CENTER/SP_GET_INV_HISTORY"),
             params: {
                 CTZNO: CTZNO
+            }
+        });
+        return response;
+    };
+
+    this.SP_GET_DATA_CER_ALL = function (rcvno, ref_code) {
+        var response = $http({
+            method: "post",
+            url: SET_URL_SV("/SV_CENTER/SP_GET_DATA_CER_ALL"),
+            params: {
+                rcvno: rcvno,
+                ref_code: ref_code
+            }
+        });
+        return response;
+    };
+
+    this.SP_GET_CER_DRUG_ALL_RCV = function (process_id) {
+        var response = $http({
+            method: "post",
+            url: SET_URL_SV("/SV_CENTER/SP_GET_CER_DRUG_ALL_RCV"),
+            params: {
+                process_id: process_id
+            }
+        });
+        return response;
+    };
+
+    this.SP_GET_CER_DRUG_APPROVED_PROCESS = function (process_id) {
+        var response = $http({
+            method: "post",
+            url: SET_URL_SV("/SV_CENTER/SP_GET_CER_DRUG_APPROVED_PROCESS"),
+            params: {
+                process_id: process_id
+            }
+        });
+        return response;
+    };
+
+    this.SP_GET_CER_DRUG_LCN = function (CITIZEN) {
+        var response = $http({
+            method: "post",
+            url: SET_URL_SV("/SV_CENTER/SP_GET_CER_DRUG_LCN"),
+            params: {
+                CITIZEN: CITIZEN
             }
         });
         return response;

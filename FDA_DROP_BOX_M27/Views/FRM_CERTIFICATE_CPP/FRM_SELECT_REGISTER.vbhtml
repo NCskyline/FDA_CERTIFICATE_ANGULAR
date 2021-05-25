@@ -1,39 +1,30 @@
-﻿
-@Code
-    ViewData("Title") = "Home Page"
+﻿<div>
 
-End Code
-
-<script src="../Scripts_angular/ANGULAR_APP.js"></script>
-<script src="../Scripts_angular/CENTER_SV.js"></script>
-<script src="../Scripts_angular/LCN/FRM_SELECT_LCN_CTRL.js"></script>
-
-<div class="ic" ng-controller="FRM_SELECT_LCN_CTRL" ng-app="ANGULAR_APP">
-
-    <div class="title-ic">
-        รายการสถานที่ <i class="tt-ic fas fa-bookmark"></i>
-    </div>
-    <hr />
-    <table ng-repeat="datas in DATA_LCN">
+    <table>
         <tr>
             <td>ชื่อบริษัท</td>
-            <td>{{DATA_LCN.thanm}}</td>
+            <td></td>
+            <td style="margin-left:2%">(เลขที่ใบอนุญาต : {{LCNNO}} )</td>
         </tr>
         <tr>
             <td>ที่อยู่</td>
-            <td>{{DATA_LCN.fulladdr}}</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>สถานที่</td>
+            <td></td>
         </tr>
     </table>
-    <hr />
+    <hr style="width:70%" />
+    <div><h3>เลือกรายการ</h3></div>
     <div class="row">
         <div class="col-sm-12">
             <div class="search-item">
-                <input class="search-input" type="text" placeholder="ค้นหา..." ng-model="filter">
+                <input class="search-input" type="text" placeholder="ค้นหา...เลขทะเบียน หรือ ชื่อผลิตภัณฑ์" ng-model="filter">
                 <i class="fa fa-search search-icon"></i>
             </div>
         </div>
     </div>
-    <hr />
     <div class="row">
         <div class="col-sm-12">
             <div class="card" ng-repeat="datas in LIST_LCN | filter : filter" style=" border-top: 10px solid #277210;">
@@ -43,24 +34,15 @@ End Code
                         <div class="col-sm-10">
                             <div class="row">
                                 <div class="col-sm-2 set-topic">
-                                    ใบอนุญาต :
+                                    เลขทะเบียน :
                                 </div>
                                 <div class="col-sm-10">
                                     {{datas.LCNNO}}
                                 </div>
                             </div>
-                            @*<div class="row">
-                                    <div class="col-sm-2 set-topic">
-                                        ประเภทสถานที่ :
-                                    </div>
-                                    <div class="col-sm-10">
-                                        {{datas.LCN_TYPE}}
-                                    </div>
-                                </div>*@
-
                             <div class="row">
                                 <div class="col-sm-2 set-topic">
-                                    ชื่อสถานที่ :
+                                    ชื่อผลิตภัณฑ์(ไทย) :
                                 </div>
                                 <div class="col-sm-10">
                                     {{datas.NAME}}
@@ -68,10 +50,18 @@ End Code
                             </div>
                             <div class="row">
                                 <div class="col-sm-2 set-topic">
-                                    ที่อยู่ :
+                                    ชื่อผลิตภัณฑ์(อังกฤษ) :
                                 </div>
                                 <div class="col-sm-10">
                                     {{datas.ADDR}}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2 set-topic">
+                                    วันที่อนุมัติ :
+                                </div>
+                                <div class="col-sm-10">
+                                    {{datas.LCN_TYPE}}
                                 </div>
                             </div>
                         </div>
@@ -100,3 +90,4 @@ End Code
         </div>
     </div>
 </div>
+

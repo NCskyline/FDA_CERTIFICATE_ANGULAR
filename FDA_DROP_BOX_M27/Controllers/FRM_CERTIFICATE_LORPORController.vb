@@ -18,5 +18,8 @@ Namespace Controllers
         Function INPUT_RORPOR_04() As ActionResult
             Return View()
         End Function
+        Function INPUT_RORPOR_05() As ActionResult
+            Return View()
+        End Function
     End Class
 End Namespace

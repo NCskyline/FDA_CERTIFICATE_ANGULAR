@@ -302,6 +302,10 @@
     <Content Include="Images\layout\icon\Thumbs.db" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\common.js" />
+    <Content Include="js\dist\listree.cjs.min.js" />
+    <Content Include="js\dist\listree.esm.min.js" />
+    <Content Include="js\dist\listree.min.css" />
+    <Content Include="js\dist\listree.umd.min.js" />
     <Content Include="js\drug.js" />
     <Content Include="js\fontawesome-all.min.js" />
     <Content Include="js\fusioncharts.charts.js" />
@@ -376,6 +380,7 @@
       <LastGenOutput>LINQ_CER.designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="js\package.json" />
     <None Include="Linq\LINQ_CER.dbml.layout">
       <DependentUpon>LINQ_CER.dbml</DependentUpon>
     </None>
@@ -393,6 +398,9 @@
     <Content Include="Views\FRM_CERTIFICATE_CPP\INPUT_CPP.vbhtml" />
     <Content Include="Views\FRM_CERTIFICATE_LORPOR\INPUT_RORPOR_03.vbhtml" />
     <Content Include="Views\FRM_CERTIFICATE_LORPOR\INPUT_RORPOR_04.vbhtml" />
+    <Content Include="Views\FRM_CERTIFICATE_LORPOR\INPUT_RORPOR_05.vbhtml" />
+    <Content Include="Views\AUTHEN\FRM_STAFF_REPLACEMENT_LICENSE.vbhtml" />
+    <Content Include="Views\FRM_CERTIFICATE_CPP\FRM_SELECT_REGISTER.vbhtml" />
     <None Include="Web References\WS_FLATTEN\WS_FLATTEN.disco" />
     <Content Include="Web References\WS_LOG\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>

@@ -149,6 +149,15 @@
         End Set
     End Property
 
+    Private _CITIZEN_ID_REPLACEMENT As String
+    Public Property CITIZEN_ID_REPLACEMENT() As String
+        Get
+            Return _CITIZEN_ID_REPLACEMENT
+        End Get
+        Set(ByVal value As String)
+            _CITIZEN_ID_REPLACEMENT = value
+        End Set
+    End Property
     'Public Enum ABC
     '    สบ3 = 1 'TESTETSET
     '    สบ5 = 3

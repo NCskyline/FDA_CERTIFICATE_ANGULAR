@@ -8,9 +8,6 @@ End Code
 
 <div class="ic" ng-controller="AUTHEN_GATWAY_CTRL" ng-app="ANGULAR_APP">
     
-    <div ng-include="SET_SUB_MAIN_PAGE">
-
-    </div>
-
+    
 </div>
 

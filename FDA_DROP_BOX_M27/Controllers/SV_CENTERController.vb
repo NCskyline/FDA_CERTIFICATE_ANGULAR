@@ -24,13 +24,37 @@ Namespace Controllers
 #End Region
 
 #Region "STORE"
-        Function SP_GET_INV_HISTORY(ByVal CTZNO As String)
-            Dim dt As New DataTable
-            Dim bao As New BAO
-            dt = bao.SP_GET_INV_HISTORY(CTZNO)
+        Function SP_GET_CER_DRUG_ALL_RCV(ByVal PROCESS_ID As Integer) As JsonResult
+            Dim DT As New DataTable
+            Dim BAO As New BAO
+            DT = BAO.SP_GET_CER_DRUG_ALL_RCV(PROCESS_ID)
             Dim clsds As New ClassDataset
-            Return Json(clsds.DataTableToJSON(dt), JsonRequestBehavior.AllowGet)
+            Return Json(clsds.DataTableToJSON(DT), JsonRequestBehavior.AllowGet)
+        End Function
 
+        Function SP_GET_CER_DRUG_LCN(ByVal CITIZEN As String) As JsonResult
+            Dim DT As New DataTable
+            Dim BAO As New BAO
+            DT = BAO.SP_GET_DRUG_LCN_IDEN(CITIZEN)
+            Dim clsds As New ClassDataset
+            Return Json(clsds.DataTableToJSON(DT), JsonRequestBehavior.AllowGet)
+
+        End Function
+
+        Function SP_GET_CER_DRUG_APPROVED_PROCESS(ByVal PROCESS_ID As Integer) As JsonResult
+            Dim DT As New DataTable
+            Dim BAO As New BAO
+            DT = BAO.SP_GET_CER_DRUG_APPROVED_PROCESS(PROCESS_ID)
+            Dim clsds As New ClassDataset
+            Return Json(clsds.DataTableToJSON(DT), JsonRequestBehavior.AllowGet)
+        End Function
+
+        Function SP_GET_DATA_CER_ALL(ByVal RCVNO As String, ByVal REF_CODE As String) As JsonResult
+            Dim DT As New DataTable
+            Dim BAO As New BAO
+            DT = BAO.SP_GET_CER_DRUG_APPROVED(RCVNO, REF_CODE)
+            Dim clsds As New ClassDataset
+            Return Json(clsds.DataTableToJSON(DT), JsonRequestBehavior.AllowGet)
         End Function
 
         Function SP_GET_BOX_APPROVE(ByVal TR_ID As String) As JsonResult

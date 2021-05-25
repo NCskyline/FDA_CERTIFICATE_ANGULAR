@@ -14,5 +14,10 @@ Namespace Controllers
         Function FRM_CER_MAIN() As ActionResult
             Return View()
         End Function
+        Function FRM_STAFF_REPLACEMENT_LICENSE() As ActionResult
+            Return View()
+        End Function
+
+
     End Class
 End Namespace

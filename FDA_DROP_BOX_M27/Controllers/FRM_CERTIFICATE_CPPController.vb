@@ -11,5 +11,9 @@ Namespace Controllers
         Function INPUT_CPP() As ActionResult
             Return View()
         End Function
+        Function FRM_SELECT_REGISTER() As ActionResult
+            Return View()
+        End Function
+
     End Class
 End Namespace

@@ -42,6 +42,7 @@
     <script src="~/Scripts/angular-material.js"></script>
     <link href="~/css/spinners.css" rel="stylesheet" />
     <script src="~/Scripts_angular/JS_COMMON.js"></script>
+    <script src="~/Scripts_angular/AUTHEN/FRM_CER_MAIN_CTRL.js"></script>
     <script src="~/Scripts_angular/ANGULAR_APP.js"></script>
     @*<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>*@
 </head>
@@ -61,13 +62,13 @@
                 <!-- Links -->
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:white">หน้าแรก</a>
+                        <a class="nav-link" href="../AUTHEN/FRM_CER_MAIN" style="color:white">หน้าแรก</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" style="color:white">ค้นหาผลิตภัณฑ์</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:white">รับเรื่องแทนผู้ประกอบการ</a>
+                        <a class="nav-link" href="../AUTHEN/FRM_STAFF_REPLACEMENT_LICENSE" style="color:white">รับเรื่องแทนผู้ประกอบการ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://privus.fda.moph.go.th/" style="color:white">ออกจากระบบ</a>
