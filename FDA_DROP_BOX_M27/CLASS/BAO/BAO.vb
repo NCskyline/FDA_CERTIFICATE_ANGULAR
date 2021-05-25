@@ -250,6 +250,15 @@ Public Class BAO
 
         Return dt
     End Function
+
+    Public Function SP_MAINCOMPANY_IDENTIFY(ByVal CITIZEN_AUTHORIZE As String) As DataTable
+        Dim clsds As New ClassDataset
+        Dim sql As String = "exec SP_MAINCOMPANY_IDENTIFY @identify = '" & CITIZEN_AUTHORIZE & "'"
+        Dim dt As New DataTable
+        dt = clsds.dsQueryselect(sql, _con_CPN).Tables(0)
+
+        Return dt
+    End Function
 #End Region
 
     'Public Function SP_GEN_NO(ByVal PROCESS_ID As Integer, ByVal IDA As Integer)

@@ -1,15 +1,12 @@
 ﻿
 app.service("CENTER_SV", function ($http, Upload) {
 
-    this.SP_GET_BOX_CTZNO = function () {
+    this.SP_MAINCOMPANY_IDENTIFY = function (IDENTIFY) {
         var response = $http({
             method: "post",
-            url: SET_URL_SV("/SV_CENTER/SP_GET_BOX_CTZNO"),
+            url: SET_URL_SV("/SV_CENTER/SP_MAINCOMPANY_IDENTIFY"),
             params: { 
-                LCN_IDA: LCN_ID,
-                CTZNO: CITIZEN_NO,
-                LCN_TYPE: LCN_TYPE,
-                TOKEN: TOKEN
+                IDENTIFY: IDENTIFY     
             }
         });
         return response;

@@ -8,9 +8,14 @@
 
         var CITIZEN_ID_REPLACEMENT = sessionStorage.CITIZEN_ID_REPLACEMENT;
 
+        //var DataLCN = CENTER_SV.SP_MAINCOMPANY_IDENTIFY(CITIZEN_ID_REPLACEMENT);
+        //DataLCN.then(function (datas) {
+        //    $scope.DATA_LCN = datas.data;
+        //});
+
         var Getdata = CENTER_SV.SP_GET_CER_DRUG_LCN(CITIZEN_ID_REPLACEMENT);
         Getdata.then(function (datas) {
-            $scope.LIST_LCN = datas.data;
+            $scope.LIST_LCN = datas.data;           
         });
 
     }

@@ -24,6 +24,15 @@ Namespace Controllers
 #End Region
 
 #Region "STORE"
+
+        Function SP_MAINCOMPANY_IDENTIFY(ByVal IDENTIFY As String) As JsonResult
+            Dim DT As New DataTable
+            Dim BAO As New BAO
+            DT = BAO.SP_MAINCOMPANY_IDENTIFY(IDENTIFY)
+            Dim clsds As New ClassDataset
+            Return Json(clsds.DataTableToJSON(DT), JsonRequestBehavior.AllowGet)
+        End Function
+
         Function SP_GET_CER_DRUG_ALL_RCV(ByVal PROCESS_ID As Integer) As JsonResult
             Dim DT As New DataTable
             Dim BAO As New BAO

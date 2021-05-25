@@ -10,21 +10,22 @@ End Code
 
 <div class="ic" ng-controller="FRM_SELECT_LCN_CTRL" ng-app="ANGULAR_APP">
 
+   
     <div class="title-ic">
         รายการสถานที่ <i class="tt-ic fas fa-bookmark"></i>
     </div>
     <hr />
-    <table ng-repeat="datas in DATA_LCN">
+    @*<table ng-repeat="datas in DATA_LCN">
         <tr>
             <td>ชื่อบริษัท</td>
-            <td>{{DATA_LCN.thanm}}</td>
+            <td>{{datas.thanm}}</td>
         </tr>
         <tr>
             <td>ที่อยู่</td>
-            <td>{{DATA_LCN.fulladdr}}</td>
+            <td>{{datas.fulladdr}}</td>
         </tr>
     </table>
-    <hr />
+    <hr />*@
     <div class="row">
         <div class="col-sm-12">
             <div class="search-item">
@@ -46,24 +47,16 @@ End Code
                                     ใบอนุญาต :
                                 </div>
                                 <div class="col-sm-10">
-                                    {{datas.LCNNO}}
+                                    {{datas.lcnno_no}}
                                 </div>
                             </div>
-                            @*<div class="row">
-                                    <div class="col-sm-2 set-topic">
-                                        ประเภทสถานที่ :
-                                    </div>
-                                    <div class="col-sm-10">
-                                        {{datas.LCN_TYPE}}
-                                    </div>
-                                </div>*@
-
+                           
                             <div class="row">
                                 <div class="col-sm-2 set-topic">
                                     ชื่อสถานที่ :
                                 </div>
                                 <div class="col-sm-10">
-                                    {{datas.NAME}}
+                                    {{datas.thanm}}
                                 </div>
                             </div>
                             <div class="row">
@@ -71,7 +64,7 @@ End Code
                                     ที่อยู่ :
                                 </div>
                                 <div class="col-sm-10">
-                                    {{datas.ADDR}}
+                                    {{datas.thanm_address}}
                                 </div>
                             </div>
                         </div>
